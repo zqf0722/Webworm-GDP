@@ -15,7 +15,9 @@ class DB:
   cursor = None  
   #连接
   def connect(self):  
-    self.conn = pymysql.connect("localhost", "root", "123456", "POP", charset='utf8' )
+    
+      #首次使用时修改该数据库参数
+      self.conn = pymysql.connect("localhost", "root", "123456", "POP", charset='utf8' )
   #执行操作
   def execute(self, sql):  
     try:  
