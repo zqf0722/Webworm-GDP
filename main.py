@@ -1,4 +1,4 @@
-import pop
+import drawmap
 
 #需要时重新获取api
 import getapi
@@ -20,7 +20,11 @@ import getapi
 
 
 if __name__ == '__main__':  
-    #getapi.get_all()，首次使用时请运行一次这条语句
-    pop.draw_bar()
-    pop.draw_line()
+    #首次使用时请运行一次这条语句来获取数据
+    #getapi.get_all()
+    drawmap.draw_pop_bar()
+    drawmap.draw_pop_line()
+    drawmap.draw_gdp_bar()
+    drawmap.draw_gdp_pie()
+    drawmap.draw_gdp_line()
       
